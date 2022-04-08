@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+  </head>
+  <body>
+    <!-- <h1 class="title">Hello World</h1> -->
+    <main class="container">
+
+      <div class="imgs">
+        <div id="imgRock" class="img">
+          <img
+            src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296854_960_720.png"
+            alt="piedra"
+          />
+        </div>
+        <div id="imgPaper" class="img">
+          <img
+            src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296855_960_720.png"
+            alt="papel"
+          />
+        </div>
+        <div id="imgScissor" class="img">
+          <img
+            src="https://cdn.pixabay.com/photo/2014/03/25/15/26/rock-paper-scissors-296853_960_720.png"
+            alt="tejera"
+          />
+        </div>
+      </div>
+
+      <div class="btns">
+        <button id="btnRock" class="btn">Rock</button>
+        <button id="btnPaper" class="btn">Paper</button>
+        <button id="btnScissor" class="btn">Scissor</button>
+      </div>
+
+      <div class="scores">
+        <h3 class="scores__title scores__title--1">Scores</h3>
+        <div class="scores__container">
+          <div class="scores__item">
+            <h5 class="scores__title scores__title--2">USER</h5>
+            <div class="scores__item-container">
+              <span class="scores__item--title">Player</span>
+              <span id="playNumberUser" class="scores__item--score" >0</span>
+            </div>
+            <div class="scores__item-container">
+              <span class="scores__item--title">winer</span>
+              <span id="winerUser" class="scores__item--score">0</span>
+            </div>
+          </div>
+          <div class="scores__item">
+            <h5 class="scores__title scores__title--3">MACHINE</h5>
+            <div class="scores__item-container">
+              <span class="scores__item--title">Player</span>
+              <span id="playNumberMachine" class="scores__item--score">0</span>
+            </div>
+            <div class="scores__item-container">
+              <span class="scores__item--title">winer</span>
+              <span id="winerMachine" class="scores__item--score">0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="paragraphs">
+        <p class="paragraph">The winner of this game is</p>
+      </div>
+      
+    </main>
+    <script src="./src/js/index.js" type="module"></script>
+  </body>
+</html>
